@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (customer satisfaction)' inline='true' name='federated.0ac62840uwfbq613uh8710j6bj4l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='customer satisfaction' name='excel-direct.1b9zz3o184hnwd156cdmi1scqcx7'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/saiha/OneDrive/FDS/Pictures/Documents/My Tableau Repository/Datasources/customer satisfaction.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1b9zz3o184hnwd156cdmi1scqcx7' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='D4:F9:no:D4:F9:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Customer ID' ordinal='0' />
+            <column datatype='integer' name='age' ordinal='1' />
+            <column datatype='integer' name='satisfaction score' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;D4:F9:no:D4:F9:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_969150E37103472BBA8D877FD7B350C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_969150E37103472BBA8D877FD7B350C6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>satisfaction score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[satisfaction score]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>satisfaction score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_969150E37103472BBA8D877FD7B350C6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Customer ID]' role='measure' type='quantitative' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_969150E37103472BBA8D877FD7B350C6]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Satisfaction Score' datatype='integer' name='[satisfaction score]' role='dimension' type='ordinal' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/saiha/AppData/Local/Temp/TableauTemp/#TableauTemp_05om4u90kwfy8s113ks9h1woh88o.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/11/2026 05:00:33 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Customer ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Customer ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_969150E37103472BBA8D877FD7B350C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_969150E37103472BBA8D877FD7B350C6]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>satisfaction score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[satisfaction score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>satisfaction score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_969150E37103472BBA8D877FD7B350C6]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_969150E37103472BBA8D877FD7B350C6'>
+            <properties context=''>
+              <relation connection='excel-direct.1b9zz3o184hnwd156cdmi1scqcx7' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='D4:F9:no:D4:F9:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Customer ID' ordinal='0' />
+                  <column datatype='integer' name='age' ordinal='1' />
+                  <column datatype='integer' name='satisfaction score' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>customer satisfaction score</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (customer satisfaction)' name='federated.0ac62840uwfbq613uh8710j6bj4l' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ac62840uwfbq613uh8710j6bj4l'>
+            <column datatype='integer' name='[Customer ID]' role='measure' type='quantitative' />
+            <column-instance column='[Customer ID]' derivation='Count' name='[cnt:Customer ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[satisfaction score]' derivation='None' name='[none:satisfaction score:ok]' pivot='key' type='ordinal' />
+            <column aggregation='Sum' caption='Satisfaction Score' datatype='integer' name='[satisfaction score]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0ac62840uwfbq613uh8710j6bj4l].[none:satisfaction score:ok]' />
+              <wedge-size column='[federated.0ac62840uwfbq613uh8710j6bj4l].[cnt:Customer ID:qk]' />
+              <text column='[federated.0ac62840uwfbq613uh8710j6bj4l].[none:satisfaction score:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{49427F44-D848-4C44-8799-8AE477EB93EF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ac62840uwfbq613uh8710j6bj4l].[none:satisfaction score:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ac62840uwfbq613uh8710j6bj4l].[none:Customer ID:ok]</field>
+            <field>[federated.0ac62840uwfbq613uh8710j6bj4l].[none:satisfaction score:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AAC94318-2D26-4723-BB16-0B86EE966AC3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
